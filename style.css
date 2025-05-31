@@ -1,4 +1,4 @@
-
+/* General Body Styles */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -6,21 +6,51 @@ body {
   background-color: #f5f5f5;
 }
 
+/* Main Content Area */
 main {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
+/* Heading Styling */
 h1 {
   text-align: center;
   color: #2c3e50;
 }
 
+/* Active Link Styling */
 .nav-links a.active {
   font-weight: bold;
   text-decoration: underline;
+}
+
+/* Navbar Styling */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #2c3e50;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 30px;
+}
+
+/* Navbar Links Styling */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Navbar Links Hover Effect */
+.nav-links a:hover {
+  color: #3498db;
 }
